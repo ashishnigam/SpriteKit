@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14C99A041817E1CC00FC600B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C99A031817E1CC00FC600B /* Foundation.framework */; };
+		14C99A061817E1CC00FC600B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C99A051817E1CC00FC600B /* CoreGraphics.framework */; };
+		14C99A081817E1CC00FC600B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C99A071817E1CC00FC600B /* UIKit.framework */; };
+		14C99A0A1817E1CC00FC600B /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C99A091817E1CC00FC600B /* SpriteKit.framework */; };
+		14C99A101817E1CC00FC600B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14C99A0E1817E1CC00FC600B /* InfoPlist.strings */; };
+		14C99A121817E1CC00FC600B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C99A111817E1CC00FC600B /* main.m */; };
+		14C99A161817E1CC00FC600B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C99A151817E1CC00FC600B /* AppDelegate.m */; };
+		14C99A191817E1CC00FC600B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C99A171817E1CC00FC600B /* Main_iPhone.storyboard */; };
+		14C99A1C1817E1CC00FC600B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C99A1A1817E1CC00FC600B /* Main_iPad.storyboard */; };
+		14C99A1F1817E1CC00FC600B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C99A1E1817E1CC00FC600B /* ViewController.m */; };
+		14C99A221817E1CC00FC600B /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C99A211817E1CC00FC600B /* MyScene.m */; };
+		14C99A241817E1CD00FC600B /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 14C99A231817E1CD00FC600B /* Spaceship.png */; };
+		14C99A261817E1CD00FC600B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C99A251817E1CD00FC600B /* Images.xcassets */; };
+		14C99A2D1817E1CD00FC600B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C99A2C1817E1CD00FC600B /* XCTest.framework */; };
+		14C99A2E1817E1CD00FC600B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C99A031817E1CC00FC600B /* Foundation.framework */; };
+		14C99A2F1817E1CD00FC600B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C99A071817E1CC00FC600B /* UIKit.framework */; };
+		14C99A371817E1CD00FC600B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14C99A351817E1CD00FC600B /* InfoPlist.strings */; };
+		14C99A391817E1CD00FC600B /* SpriteKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C99A381817E1CD00FC600B /* SpriteKitTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14C99A301817E1CD00FC600B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14C999F81817E1CB00FC600B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14C999FF1817E1CC00FC600B;
+			remoteInfo = SpriteKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14C99A001817E1CC00FC600B /* SpriteKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C99A031817E1CC00FC600B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		14C99A051817E1CC00FC600B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		14C99A071817E1CC00FC600B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		14C99A091817E1CC00FC600B /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		14C99A0D1817E1CC00FC600B /* SpriteKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKit-Info.plist"; sourceTree = "<group>"; };
+		14C99A0F1817E1CC00FC600B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14C99A111817E1CC00FC600B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14C99A131817E1CC00FC600B /* SpriteKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpriteKit-Prefix.pch"; sourceTree = "<group>"; };
+		14C99A141817E1CC00FC600B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		14C99A151817E1CC00FC600B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		14C99A181817E1CC00FC600B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		14C99A1B1817E1CC00FC600B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		14C99A1D1817E1CC00FC600B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		14C99A1E1817E1CC00FC600B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14C99A201817E1CC00FC600B /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		14C99A211817E1CC00FC600B /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		14C99A231817E1CD00FC600B /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		14C99A251817E1CD00FC600B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		14C99A2B1817E1CD00FC600B /* SpriteKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C99A2C1817E1CD00FC600B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		14C99A341817E1CD00FC600B /* SpriteKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKitTests-Info.plist"; sourceTree = "<group>"; };
+		14C99A361817E1CD00FC600B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14C99A381817E1CD00FC600B /* SpriteKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14C999FD1817E1CC00FC600B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C99A061817E1CC00FC600B /* CoreGraphics.framework in Frameworks */,
+				14C99A081817E1CC00FC600B /* UIKit.framework in Frameworks */,
+				14C99A0A1817E1CC00FC600B /* SpriteKit.framework in Frameworks */,
+				14C99A041817E1CC00FC600B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C99A281817E1CD00FC600B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C99A2D1817E1CD00FC600B /* XCTest.framework in Frameworks */,
+				14C99A2F1817E1CD00FC600B /* UIKit.framework in Frameworks */,
+				14C99A2E1817E1CD00FC600B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14C999F71817E1CB00FC600B = {
+			isa = PBXGroup;
+			children = (
+				14C99A0B1817E1CC00FC600B /* SpriteKit */,
+				14C99A321817E1CD00FC600B /* SpriteKitTests */,
+				14C99A021817E1CC00FC600B /* Frameworks */,
+				14C99A011817E1CC00FC600B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14C99A011817E1CC00FC600B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14C99A001817E1CC00FC600B /* SpriteKit.app */,
+				14C99A2B1817E1CD00FC600B /* SpriteKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14C99A021817E1CC00FC600B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14C99A031817E1CC00FC600B /* Foundation.framework */,
+				14C99A051817E1CC00FC600B /* CoreGraphics.framework */,
+				14C99A071817E1CC00FC600B /* UIKit.framework */,
+				14C99A091817E1CC00FC600B /* SpriteKit.framework */,
+				14C99A2C1817E1CD00FC600B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14C99A0B1817E1CC00FC600B /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				14C99A141817E1CC00FC600B /* AppDelegate.h */,
+				14C99A151817E1CC00FC600B /* AppDelegate.m */,
+				14C99A171817E1CC00FC600B /* Main_iPhone.storyboard */,
+				14C99A1A1817E1CC00FC600B /* Main_iPad.storyboard */,
+				14C99A1D1817E1CC00FC600B /* ViewController.h */,
+				14C99A1E1817E1CC00FC600B /* ViewController.m */,
+				14C99A201817E1CC00FC600B /* MyScene.h */,
+				14C99A211817E1CC00FC600B /* MyScene.m */,
+				14C99A231817E1CD00FC600B /* Spaceship.png */,
+				14C99A251817E1CD00FC600B /* Images.xcassets */,
+				14C99A0C1817E1CC00FC600B /* Supporting Files */,
+			);
+			path = SpriteKit;
+			sourceTree = "<group>";
+		};
+		14C99A0C1817E1CC00FC600B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14C99A0D1817E1CC00FC600B /* SpriteKit-Info.plist */,
+				14C99A0E1817E1CC00FC600B /* InfoPlist.strings */,
+				14C99A111817E1CC00FC600B /* main.m */,
+				14C99A131817E1CC00FC600B /* SpriteKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14C99A321817E1CD00FC600B /* SpriteKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				14C99A381817E1CD00FC600B /* SpriteKitTests.m */,
+				14C99A331817E1CD00FC600B /* Supporting Files */,
+			);
+			path = SpriteKitTests;
+			sourceTree = "<group>";
+		};
+		14C99A331817E1CD00FC600B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14C99A341817E1CD00FC600B /* SpriteKitTests-Info.plist */,
+				14C99A351817E1CD00FC600B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14C999FF1817E1CC00FC600B /* SpriteKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14C99A3C1817E1CD00FC600B /* Build configuration list for PBXNativeTarget "SpriteKit" */;
+			buildPhases = (
+				14C999FC1817E1CC00FC600B /* Sources */,
+				14C999FD1817E1CC00FC600B /* Frameworks */,
+				14C999FE1817E1CC00FC600B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpriteKit;
+			productName = SpriteKit;
+			productReference = 14C99A001817E1CC00FC600B /* SpriteKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14C99A2A1817E1CD00FC600B /* SpriteKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14C99A3F1817E1CD00FC600B /* Build configuration list for PBXNativeTarget "SpriteKitTests" */;
+			buildPhases = (
+				14C99A271817E1CD00FC600B /* Sources */,
+				14C99A281817E1CD00FC600B /* Frameworks */,
+				14C99A291817E1CD00FC600B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14C99A311817E1CD00FC600B /* PBXTargetDependency */,
+			);
+			name = SpriteKitTests;
+			productName = SpriteKitTests;
+			productReference = 14C99A2B1817E1CD00FC600B /* SpriteKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14C999F81817E1CB00FC600B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = OneZeroOne;
+				TargetAttributes = {
+					14C99A2A1817E1CD00FC600B = {
+						TestTargetID = 14C999FF1817E1CC00FC600B;
+					};
+				};
+			};
+			buildConfigurationList = 14C999FB1817E1CB00FC600B /* Build configuration list for PBXProject "SpriteKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14C999F71817E1CB00FC600B;
+			productRefGroup = 14C99A011817E1CC00FC600B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14C999FF1817E1CC00FC600B /* SpriteKit */,
+				14C99A2A1817E1CD00FC600B /* SpriteKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14C999FE1817E1CC00FC600B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C99A241817E1CD00FC600B /* Spaceship.png in Resources */,
+				14C99A261817E1CD00FC600B /* Images.xcassets in Resources */,
+				14C99A1C1817E1CC00FC600B /* Main_iPad.storyboard in Resources */,
+				14C99A191817E1CC00FC600B /* Main_iPhone.storyboard in Resources */,
+				14C99A101817E1CC00FC600B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C99A291817E1CD00FC600B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C99A371817E1CD00FC600B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14C999FC1817E1CC00FC600B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C99A221817E1CC00FC600B /* MyScene.m in Sources */,
+				14C99A1F1817E1CC00FC600B /* ViewController.m in Sources */,
+				14C99A161817E1CC00FC600B /* AppDelegate.m in Sources */,
+				14C99A121817E1CC00FC600B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C99A271817E1CD00FC600B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C99A391817E1CD00FC600B /* SpriteKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14C99A311817E1CD00FC600B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14C999FF1817E1CC00FC600B /* SpriteKit */;
+			targetProxy = 14C99A301817E1CD00FC600B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14C99A0E1817E1CC00FC600B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14C99A0F1817E1CC00FC600B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		14C99A171817E1CC00FC600B /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14C99A181817E1CC00FC600B /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		14C99A1A1817E1CC00FC600B /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14C99A1B1817E1CC00FC600B /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		14C99A351817E1CD00FC600B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14C99A361817E1CD00FC600B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14C99A3A1817E1CD00FC600B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14C99A3B1817E1CD00FC600B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14C99A3D1817E1CD00FC600B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit/SpriteKit-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKit/SpriteKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		14C99A3E1817E1CD00FC600B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit/SpriteKit-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKit/SpriteKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		14C99A401817E1CD00FC600B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteKit.app/SpriteKit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit/SpriteKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpriteKitTests/SpriteKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		14C99A411817E1CD00FC600B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteKit.app/SpriteKit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit/SpriteKit-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKitTests/SpriteKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14C999FB1817E1CB00FC600B /* Build configuration list for PBXProject "SpriteKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C99A3A1817E1CD00FC600B /* Debug */,
+				14C99A3B1817E1CD00FC600B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14C99A3C1817E1CD00FC600B /* Build configuration list for PBXNativeTarget "SpriteKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C99A3D1817E1CD00FC600B /* Debug */,
+				14C99A3E1817E1CD00FC600B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		14C99A3F1817E1CD00FC600B /* Build configuration list for PBXNativeTarget "SpriteKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C99A401817E1CD00FC600B /* Debug */,
+				14C99A411817E1CD00FC600B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14C999F81817E1CB00FC600B /* Project object */;
+}
